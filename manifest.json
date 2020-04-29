@@ -1,0 +1,24 @@
+{
+  "name": "ChromeExt",
+  "version": "1.00",
+  "manifest_version": 2,
+  "description": "Clean way for surfing net.",
+  "browser_action": {
+    "default_icon": "icon128.png"
+  },
+  "icons": {
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.nytimes.com/*",
+        "*://*.archive.org/*",
+        "*://*.theatlantic.com/*",
+        "*://*.vk.com/*"
+      ],
+      "js": ["./src/content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
