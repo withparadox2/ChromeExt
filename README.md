@@ -1,2 +1,2 @@
 # ChromeExt
-Chrome extension to clean way for surf net.
+Chrome extension to clean way for surfing net.
