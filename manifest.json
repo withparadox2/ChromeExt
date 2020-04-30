@@ -15,7 +15,8 @@
         "*://*.nytimes.com/*",
         "*://*.archive.org/*",
         "*://*.theatlantic.com/*",
-        "*://*.vk.com/*"
+        "*://*.vk.com/*",
+        "*://*.spotify.com/*"
       ],
       "js": ["./src/content.js"],
       "run_at": "document_end"
