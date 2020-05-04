@@ -16,7 +16,8 @@
         "*://*.archive.org/*",
         "*://*.theatlantic.com/*",
         "*://*.vk.com/*",
-        "*://*.spotify.com/*"
+        "*://*.spotify.com/*",
+        "*://*.wekan.tv/*"
       ],
       "js": ["./src/content.js"],
       "run_at": "document_end"
