@@ -133,10 +133,10 @@ function setupWekanTv(consumedTime) {
       switch (key) {
         case 16: // ignore shift key
           break
-        case 188:
+        case 188: // <
           adjustSpeed(true)
           break
-        case 190:
+        case 190: // >
           adjustSpeed(false)
           break
         default:
@@ -185,7 +185,7 @@ function setupWekanTv(consumedTime) {
       ele.style.color = 'white'
       ele.style.visibility = 'hidden'
       ele.style.left = '50%'
-      ele.style.top = '50%'
+      ele.style.top = '30%'
       ele.style.transform = 'translation(-50%, -50%)'
       ele.className = 'showSpeed'
       cover.appendChild(ele)
