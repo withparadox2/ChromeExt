@@ -17,7 +17,8 @@
         "*://*.theatlantic.com/*",
         "*://*.vk.com/*",
         "*://*.spotify.com/*",
-        "*://*.wekan.tv/*"
+        "*://*.wekan.tv/*",
+        "*://*.youtube.com/*"
       ],
       "js": ["./src/content.js"],
       "run_at": "document_end"
