@@ -235,10 +235,38 @@ function setupYoutube() {
 }
 
 function setupYouglish() {
-  const subtitle = document.querySelector('#ac_data')
-  if (subtitle) {
-    subtitle.style.maxHeight = '300px'
+  const content = document.querySelectorAll('.container')[1]
+  content.style.position = 'relative'
+  content.style.width = '100%'
+
+  content.children[0].children[0].style.width = '100%'
+
+  const ele = document.createElement('div')
+  ele.style.position = 'absolute'
+  ele.style.right = '0'
+  ele.style.top = '140px'
+  ele.style.width = '35%'
+  content.appendChild(ele)
+
+  const caption = document.querySelector('#captioncont')
+  if (caption) {
+    ele.appendChild(caption)
   }
-  const content = document.querySelectorAll('.container')
-  content[content.length - 1].style.width = '700px'
+
+  const captionList = document.querySelector('#ac_data')
+  if (captionList) {
+    captionList.style.maxHeight = '400px'
+  }
+
+  const expandBtn = document.querySelector('.beffect_bt.hand.togglecaps')
+  if (expandBtn) {
+    setTimeout(() => {
+      expandBtn.click()
+    }, 1000)
+  }
+
+  const videoContainer = content.querySelector('.result_container')
+  if (videoContainer) {
+    videoContainer.style.width = '65%'
+  }
 }
