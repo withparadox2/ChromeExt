@@ -260,8 +260,15 @@ function setupYouglish() {
 
   const expandBtn = document.querySelector('.beffect_bt.hand.togglecaps')
   if (expandBtn) {
+    function expandList() {
+      const captionListContainer = document.querySelector('#ac_container')
+      if (captionListContainer && captionListContainer.style.display == 'none') {
+        expandBtn.click()
+      }
+    }
     setTimeout(() => {
-      expandBtn.click()
+      expandList()
+      setInterval(expandList, 3000)
     }, 1000)
   }
 
