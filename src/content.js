@@ -19,6 +19,8 @@ if (testSite('nytimes.com')) {
   setupWekanTv()
 } else if (testSite('youtube.com/watch')) {
   window.onload = setupYoutube
+} else if (testSite('youglish.com')) {
+  setupYouglish()
 }
 
 function testSite(input) {
@@ -43,7 +45,7 @@ function removeElement(selectors, doLoop = true) {
 
     if (!doLoop || Date.now() - startTime > 3000) {
       clearInterval(intervalId)
-      console.log('Abort for failing to find element with selector: ' + selector)
+      console.log('Abort for failing to find element with selectors: ' + selectors)
     }
   }, 300)
 }
@@ -230,4 +232,13 @@ function setupYoutube() {
   console.log('listurl:' + list)
   console.log('asr url:' + asr)
 
+}
+
+function setupYouglish() {
+  const subtitle = document.querySelector('#ac_data')
+  if (subtitle) {
+    subtitle.style.maxHeight = '300px'
+  }
+  const content = document.querySelectorAll('.container')
+  content[content.length - 1].style.width = '700px'
 }

@@ -18,7 +18,8 @@
         "*://*.vk.com/*",
         "*://*.spotify.com/*",
         "*://*.wekan.tv/*",
-        "*://*.youtube.com/*"
+        "*://*.youtube.com/*",
+        "*://*.youglish.com/*"
       ],
       "js": ["./src/content.js"],
       "run_at": "document_end"
