@@ -278,6 +278,8 @@ function setupYouglish() {
   }
 
   window.onkeydown = (function (ev) {
+    let consumed = true
+
     let key
     let isShift
     if (window.event) {
@@ -308,6 +310,7 @@ function setupYouglish() {
           loop()
           break
         default:
+          consumed = false
           break
       }
     } else {
@@ -318,7 +321,15 @@ function setupYouglish() {
         case 32: // space
           pausePlay()
           break;
+        default:
+          consumed = false
+          break
       }
+    }
+
+    if (consumed) {
+      ev.preventDefault()
+      ev.stopPropagation()
     }
   });
 
