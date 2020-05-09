@@ -10,6 +10,9 @@ if (testSite('nytimes.com')) {
   }
 } else if (testSite('spotify.com')) {
   removeElement('[data-testid="test-ref-div"]')
+  setInterval(() => {
+    removeElement('[data-testid="test-ref-div"]', false)
+  }, 10000)
 } else if (testSite('archive.org')) {
   setupArchive()
 } else if (testSite('wekan.tv')) {
@@ -20,7 +23,7 @@ function testSite(input) {
   return document.location.href.indexOf(input) >= 0
 }
 
-function removeElement(selectors) {
+function removeElement(selectors, doLoop = true) {
   if (typeof selectors == 'string') {
     selectors = [selectors]
   }
@@ -36,7 +39,7 @@ function removeElement(selectors) {
       clearInterval(intervalId)
     }
 
-    if (Date.now() - startTime > 80000) {
+    if (!doLoop || Date.now() - startTime > 3000) {
       clearInterval(intervalId)
       console.log('Abort for failing to find element with selector: ' + selector)
     }
@@ -197,10 +200,10 @@ function setupWekanTv(consumedTime) {
     if (timeoutId) {
       clearTimeout(timeoutId)
     }
-    
+
     timeoutId = setTimeout(() => {
       timeoutId = null
       showEle.style.visibility = 'hidden'
-    }, 1000)
+    }, 3000)
   }
 }
