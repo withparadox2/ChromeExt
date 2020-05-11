@@ -1,2 +1,4 @@
 *.pem
 *.crt
+node_modules/
+dist/

@@ -21,7 +21,7 @@
         "*://*.youtube.com/*",
         "*://*.youglish.com/*"
       ],
-      "js": ["./src/content.js"],
+      "js": ["./content.js"],
       "run_at": "document_end"
     }
   ]
