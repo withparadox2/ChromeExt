@@ -42,6 +42,10 @@ export function setup() {
   }
 
   window.onkeydown = (function (ev) {
+    if (document.activeElement && document.activeElement.tagName == 'INPUT') {
+      return
+    }
+
     let consumed = true
 
     let key
