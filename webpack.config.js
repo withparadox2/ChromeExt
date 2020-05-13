@@ -1,8 +1,10 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const fs = require('fs')
 
 module.exports = {
   mode: 'production',
+  watch: true,
   entry: {
     content: './src/index.js'
   },
@@ -10,7 +12,9 @@ module.exports = {
     filename: '[name].js'
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({
+      cleanAfterEveryBuildPatterns: [...excludeCleanPatterns()]
+    }),
     new CopyWebpackPlugin([{
       from: 'public/*',
       to: './',
@@ -19,4 +23,8 @@ module.exports = {
       }
     }])
   ]
+}
+
+function excludeCleanPatterns() {
+  return (fs.readdirSync('./public') || []).map(file => `!${file}`)
 }
