@@ -7,7 +7,7 @@ export function setup() {
       cacheLength = nodeList.length
       nodeList.forEach(item => {
         if (item.className.indexOf('unread') < 0) {
-          item.querySelector('.title').style.color = 'blue'
+          item.querySelector('.title').style.color = '#2bb24c'
         }
         item.onclick = (e) => {
           window.open(item.attributes['data-alternate-link'].value, '_blank')
