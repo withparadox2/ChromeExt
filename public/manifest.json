@@ -19,7 +19,8 @@
         "*://*.spotify.com/*",
         "*://*.wekan.tv/*",
         "*://*.youtube.com/*",
-        "*://*.youglish.com/*"
+        "*://*.youglish.com/*",
+        "*://*.feedly.com/*"
       ],
       "js": ["./content.js"],
       "run_at": "document_end"

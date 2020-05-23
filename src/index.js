@@ -7,6 +7,7 @@ import { setup as setupSpotify } from './spotify'
 import { setup as setupArchive } from './archive'
 import { setup as setupWekanTv } from './wekan'
 import { setup as setupYoutube } from './youtube'
+import { setup as setupFeedly } from './feedly'
 
 if (testSite('nytimes.com')) {
   setupNytimes()
@@ -24,4 +25,6 @@ if (testSite('nytimes.com')) {
   setupYoutube()
 } else if (testSite('youglish.com')) {
   setupYouglish()
-}
+} else if (testSite('feedly.com')) {
+  setupFeedly()
+} 
