@@ -41,3 +41,10 @@ Chrome extension to clean way for surfing net.
 - `npm build`
 
 After building successfully, the result will be located at `./dist`. You can pack it to a crx file or just load it as an unpacked extension through Chrome.
+
+## License
+
+MIT. See LICENSE.txt.
+```
+Copyright 2020 withparadox2
+```
