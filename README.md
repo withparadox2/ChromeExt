@@ -34,3 +34,10 @@ Chrome extension to clean way for surfing net.
 
 - Rearrange layout to make caption list display on right to the video.
 - Add some shortcuts.
+
+## Build
+
+- `npm install`
+- `npm build`
+
+After building successfully, the result will be located at `./dist`. You can pack it to a crx file or just load it as an unpacked extension through Chrome.
