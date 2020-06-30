@@ -21,7 +21,7 @@ jobs:
       with:
         author_name: bot-never-sleep
         author_email: botcircleci@gmail.com
-        message: "Add build result"
+        message: "Add build result[skip ci]"
         add: "*.crx"
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
