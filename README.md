@@ -1,4 +1,4 @@
-# ChromeExt ![](https://github.com/withparadox2/ChromeExt/workflows/ChromeExt%20build/badge.svg)
+# ChromeExt ![](https://github.com/withparadox2/ChromeExt/workflows/build/badge.svg)
 
 
 Chrome extension to clean way for surfing net.
