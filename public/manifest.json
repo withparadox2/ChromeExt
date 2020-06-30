@@ -25,5 +25,9 @@
       "js": ["./content.js"],
       "run_at": "document_end"
     }
-  ]
+  ],
+  "permissions": ["webRequest", "webRequestBlocking", "tabs", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"]
+  }
 }

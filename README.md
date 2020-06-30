@@ -35,6 +35,10 @@ Chrome extension to clean way for surfing net.
 - Rearrange layout to make caption list display on right to the video.
 - Add some shortcuts.
 
+### github.com
+
+- Append `?ts=2` to the url to format tab size in souce code to two spaces. 
+
 ## Build
 
 - `npm install`
