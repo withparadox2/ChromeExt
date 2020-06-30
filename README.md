@@ -42,10 +42,9 @@ Chrome extension to clean way for surfing net.
 ## Build
 
 - `npm install`
-- `npm build`
+- `npm run build` or `npm start` to build in watch mode
 
-After building successfully, the result will be located at `./dist`. You can pack it to a crx file or just load it as an unpacked extension through Chrome.
-
+After building successfully, the build result will be ChromeExt.crx which can be loaded as a Chrome Extension.
 ## License
 
 MIT. See LICENSE.txt.
