@@ -1,4 +1,2 @@
-*.crt
-*.crx
 node_modules/
 dist/
