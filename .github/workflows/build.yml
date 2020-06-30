@@ -15,5 +15,14 @@ jobs:
         node-version: '12.x'
     - run: npm install
     - run: npm run build
-      env:
-        CI: true
+
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v4
+      with:
+        author_name: bot-never-sleep
+        author_email: botcircleci@gmail.com
+        message: "Add build result"
+        add: "*.crx"
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      CI: true
