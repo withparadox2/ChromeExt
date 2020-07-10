@@ -8,6 +8,7 @@ import { setup as setupArchive } from './archive'
 import { setup as setupWekanTv } from './wekan'
 import { setup as setupYoutube } from './youtube'
 import { setup as setupFeedly } from './feedly'
+import { setup as setupLocal } from './local'
 
 if (testSite('nytimes.com')) {
   setupNytimes()
@@ -27,4 +28,6 @@ if (testSite('nytimes.com')) {
   setupYouglish()
 } else if (testSite('feedly.com')) {
   setupFeedly()
-} 
+} else if (testSite('JianguoYun')) {
+  setupLocal()
+}

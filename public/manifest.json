@@ -20,7 +20,8 @@
         "*://*.wekan.tv/*",
         "*://*.youtube.com/*",
         "*://*.youglish.com/*",
-        "*://*.feedly.com/*"
+        "*://*.feedly.com/*",
+        "*://*JianguoYun/*"
       ],
       "js": ["./content.js"],
       "run_at": "document_end"
