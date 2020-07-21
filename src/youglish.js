@@ -1,5 +1,5 @@
 export function setup() {
-  const content = document.querySelectorAll('.container')[1]
+  const content = document.querySelectorAll('.container')[2]
   content.style.position = 'relative'
   content.style.width = '100%'
 
