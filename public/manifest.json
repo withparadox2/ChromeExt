@@ -21,7 +21,8 @@
         "*://*.youtube.com/*",
         "*://*.youglish.com/*",
         "*://*.feedly.com/*",
-        "file://*"
+        "file://*",
+        "*://podcasts.google.com/*"
       ],
       "js": ["./content.js"],
       "run_at": "document_end"

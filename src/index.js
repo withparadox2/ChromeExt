@@ -9,6 +9,7 @@ import { setup as setupWekanTv } from './wekan'
 import { setup as setupYoutube } from './youtube'
 import { setup as setupFeedly } from './feedly'
 import { setup as setupLocal } from './local'
+import { setup as setupGooglePodcasts } from './google-podcasts'
 
 if (testSite('nytimes.com')) {
   setupNytimes()
@@ -30,4 +31,6 @@ if (testSite('nytimes.com')) {
   setupFeedly()
 } else if (testSite('JianguoYun')) {
   setupLocal()
+} else if (testSite('podcasts.google.com')) {
+  setupGooglePodcasts()
 }
