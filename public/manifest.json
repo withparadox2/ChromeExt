@@ -22,7 +22,8 @@
         "*://*.youglish.com/*",
         "*://*.feedly.com/*",
         "file://*",
-        "*://podcasts.google.com/*"
+        "*://podcasts.google.com/*",
+        "*://*.bilibili.com/*"
       ],
       "js": ["./content.js"],
       "run_at": "document_end"

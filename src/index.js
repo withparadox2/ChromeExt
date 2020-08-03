@@ -10,6 +10,7 @@ import { setup as setupYoutube } from './youtube'
 import { setup as setupFeedly } from './feedly'
 import { setup as setupLocal } from './local'
 import { setup as setupGooglePodcasts } from './google-podcasts'
+import { setup as setupBilibili } from './bilibili'
 
 if (testSite('nytimes.com')) {
   setupNytimes()
@@ -33,4 +34,6 @@ if (testSite('nytimes.com')) {
   setupLocal()
 } else if (testSite('podcasts.google.com')) {
   setupGooglePodcasts()
+} else if (testSite('bilibili')) {
+  setupBilibili()
 }
