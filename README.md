@@ -13,7 +13,6 @@ Chrome extension to clean way for surfing net.
 
 - Save and restore scroll position.
 - Display scroll-progress in percentage.
-- [ ] Customize styles like font, color, background etc.
 
 ### theatlantic.com
 
@@ -39,6 +38,14 @@ Chrome extension to clean way for surfing net.
 ### github.com
 
 - Append `?ts=2` to the url to format tab size in souce code to two spaces. 
+
+### podcasts.google.com
+
+- Provide a link to download audio file. 
+
+### bilibili.com
+
+- Set <kbd>shift</kbd> + <kbd><</kbd> and <kbd>shift</kbd> + <kbd>></kbd> as shortcuts to manipulate speed.
 
 ## Build
 
