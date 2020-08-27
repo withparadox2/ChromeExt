@@ -1,4 +1,4 @@
-function removeElement(selectors, doLoop = true) {
+function removeElement(selectors, doLoop = true, callback) {
   if (typeof selectors == 'string') {
     selectors = [selectors]
   }
@@ -10,12 +10,13 @@ function removeElement(selectors, doLoop = true) {
       elesToRemove.forEach(ele => {
         ele.parentElement.removeChild(ele)
       })
-
+      callback && callback(true)
       clearInterval(intervalId)
     }
 
-    if (!doLoop || Date.now() - startTime > 3000) {
+    if (!doLoop || Date.now() - startTime > 15000) {
       clearInterval(intervalId)
+      callback && callback(false)
       console.log('Abort for failing to find element with selectors: ' + selectors)
     }
   }, 300)
