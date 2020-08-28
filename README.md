@@ -47,6 +47,10 @@ Chrome extension to clean way for surfing net.
 
 - Set <kbd>shift</kbd> + <kbd><</kbd> and <kbd>shift</kbd> + <kbd>></kbd> as shortcuts to manipulate speed.
 
+### newyorker.com
+
+- Remove ad placeholder.
+
 ## Build
 
 - `npm install`
