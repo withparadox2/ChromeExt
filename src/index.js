@@ -11,6 +11,7 @@ import { setup as setupFeedly } from './feedly'
 import { setup as setupLocal } from './local'
 import { setup as setupGooglePodcasts } from './google-podcasts'
 import { setup as setupBilibili } from './bilibili'
+import { setup as setupNewYorker } from './newyorker'
 
 if (testSite('nytimes.com')) {
   setupNytimes()
@@ -36,4 +37,6 @@ if (testSite('nytimes.com')) {
   setupGooglePodcasts()
 } else if (testSite('bilibili')) {
   setupBilibili()
+} else if (testSite('newyorker.com')) {
+  setupNewYorker()
 }

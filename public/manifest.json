@@ -23,7 +23,8 @@
         "*://*.feedly.com/*",
         "file://*",
         "*://podcasts.google.com/*",
-        "*://*.bilibili.com/*"
+        "*://*.bilibili.com/*",
+        "*://*.newyorker.com/*"
       ],
       "js": ["./content.js"],
       "run_at": "document_end"

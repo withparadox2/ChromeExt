@@ -14,7 +14,7 @@ function removeElement(selectors, doLoop = true, callback) {
       clearInterval(intervalId)
     }
 
-    if (!doLoop || Date.now() - startTime > 15000) {
+    if (!doLoop || Date.now() - startTime > 30000) {
       clearInterval(intervalId)
       callback && callback(false)
       console.log('Abort for failing to find element with selectors: ' + selectors)
