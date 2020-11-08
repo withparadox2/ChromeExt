@@ -24,7 +24,8 @@
         "file://*",
         "*://podcasts.google.com/*",
         "*://*.bilibili.com/*",
-        "*://*.newyorker.com/*"
+        "*://*.newyorker.com/*",
+        "*://*.leetcode-cn.com/*"
       ],
       "js": ["./content.js"],
       "run_at": "document_end"

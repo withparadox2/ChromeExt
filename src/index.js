@@ -12,6 +12,7 @@ import { setup as setupLocal } from './local'
 import { setup as setupGooglePodcasts } from './google-podcasts'
 import { setup as setupBilibili } from './bilibili'
 import { setup as setupNewYorker } from './newyorker'
+import { setup as setupLeetcode } from './leetcode'
 
 if (testSite('nytimes.com')) {
   setupNytimes()
@@ -39,4 +40,6 @@ if (testSite('nytimes.com')) {
   setupBilibili()
 } else if (testSite('newyorker.com')) {
   setupNewYorker()
+} else if (testSite('leetcode')) {
+  setupLeetcode()
 }
